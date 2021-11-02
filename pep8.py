@@ -26,4 +26,17 @@ from types import (
     OutroType
 )
 
+[6] - Espacos em Expressoes e instrucoes
+
+# Nao faca
+
+funcao( algo[ 1 ], { outro: 2 } )
+algo (1)
+
+# Faca
+
+funcao(algo[1], {outro: 2})
+
+[7] - Termine sempre um instrucao com uma linha em branco
 """
+import this
