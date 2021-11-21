@@ -138,9 +138,6 @@ cores = ['verde', 'amarelo', 'azul', 'branco']
 for indice, cor in enumerate(cores):
 print(indice, cor)
 
-
-"""
-
 numeros = [5, 6, 7, 5, 8, 9, 10]
 
 # print(numeros.index(6))
@@ -149,9 +146,63 @@ numeros = [5, 6, 7, 5, 8, 9, 10]
 # Fazendo busca a partir de um range com indice inicial e final
 print(numeros.index(5, 3, 6))
 
+# Revisao Slice
+lista = [1, 2, 3, 4]
+
+# print(lista[1:]) # comecando pelo indice 1
+# print(lista[::]) # pegando todos os elemenos
+# print(lista[:4])
+
+# print(lista[1:3])
+
+# especificando so passos no slice
+# print(lista[1::2])
+print(lista[:3:2])
+
+print(lista[::-1])
+
+# Invertendo valores
+
+nomes = ['Geek', 'University']
+
+# nomes[0], nomes[1] = nomes[1], nomes[0]
+#
+# print(nomes)
+
+nomes.reverse()
+print(nomes)
 
 
+lista = [1, 2, 3, 4, 5, 6]
 
+print(sum(lista))
+print(max(lista))
+print(min(lista))
+print(len(lista))
+
+lista = [1, 2, 3, 4, 5, 6]
+
+print(lista)
+print(type(lista))
+
+
+tupla = tuple(lista)
+print(tupla)
+print(type(tupla))
+
+
+"""
+
+
+# desempacotamento de lista
+
+lista = [1, 2, 3]
+
+num1, num2, num3 = lista
+
+print(num1)
+print(num2)
+print(num3)
 
 
 
