@@ -132,12 +132,20 @@ indice = 0
 while indice < len(cores):
     print(cores[indice])
     indice = indice + 1
-"""
 
 cores = ['verde', 'amarelo', 'azul', 'branco']
 
 for indice, cor in enumerate(cores):
-    print(indice, cor)
+print(indice, cor)
+
+
+"""
+
+numeros = [5, 6, 7, 8, 9, 10]
+
+print(numeros.index(6))
+print(numeros.index(9))
+
 
 
 
