@@ -121,11 +121,19 @@ cores = ['verde', 'amarelo', 'azul', 'branco']
 # print(cores[3])
 
 # Fazendo acesso aos elementos de forma indexida reversa
-print(cores[-1])
-print(cores[-2])
-print(cores[-3])
-print(cores[-4])
+# print(cores[-1])
+# print(cores[-2])
+# print(cores[-3])
+# print(cores[-4])
+# print(cores[-5])
 
+# for cor in cores:
+#     print(cor)
+
+indice = 0
+while indice < len(cores):
+    print(cores[indice])
+    indice = indice + 1
 
 
 
