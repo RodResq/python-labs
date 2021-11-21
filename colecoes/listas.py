@@ -191,9 +191,6 @@ print(tupla)
 print(type(tupla))
 
 
-"""
-
-
 # desempacotamento de lista
 
 lista = [1, 2, 3]
@@ -205,6 +202,33 @@ print(num2)
 print(num3)
 
 
+# Copiando uma lista para outra (Shallow Copy e Deep Copy)
+
+# Forma 1
+
+lista = [1, 2, 3]
+print(lista)
+
+nova = lista.copy()
+
+print(nova)
+nova.append(4)
+
+print(lista)
+print(nova)
+
+# Lista.copy(), listas independentes (Deep Copy)
+
+"""
 
 
+# Forma 2, modificacao repetida em ambas (Shallow copy)
+
+lista = [1, 2, 3]
+nova = lista
+
+print(lista)
+nova.append(4)
+print(lista)
+print(nova)
 
