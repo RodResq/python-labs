@@ -51,8 +51,6 @@ for n in tupla:
 for indice, valor in enumerate(tupla):
     print(indice, valor)
 
-"""
-
 tupla = ('a', 'b', 'c', 'd', 'e', 'a', 'b')
 
 print(tupla.count('c'))
@@ -61,3 +59,23 @@ escola = tuple('Geek University')
 print(escola)
 
 print(escola.count('e'))
+
+
+"""
+
+# Dicas de ultilizacoa de tupla, ultilizamas tupllas sempre que nao precizarmos alterar seus valores (constante)
+
+meses = ('Janeiro', 'Fevereiro', 'Marco', 'Abril', 'Maio', 'Junho', 'Julho')
+
+print(meses)
+
+# acesso de elementos
+
+print(meses[5])
+
+i = 0
+
+while i < len(meses):
+    print(meses[i])
+    i = i + 1
+
