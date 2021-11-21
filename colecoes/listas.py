@@ -141,10 +141,13 @@ print(indice, cor)
 
 """
 
-numeros = [5, 6, 7, 8, 9, 10]
+numeros = [5, 6, 7, 5, 8, 9, 10]
 
-print(numeros.index(6))
-print(numeros.index(9))
+# print(numeros.index(6))
+# print(numeros.index(9))
+
+# Fazendo busca a partir de um range com indice inicial e final
+print(numeros.index(5, 3, 6))
 
 
 
