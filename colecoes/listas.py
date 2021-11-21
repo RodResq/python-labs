@@ -99,10 +99,10 @@ while produto != 'sair':
 for produto in carrinho:
     print(produto)
 
-
-"""
-
 print(type([]))
+
+
+# Ultilizando variaveis em listas
 
 lista1 = [1, 99, 4, 27, 15, 22, 3, 1, 44, 42, 27]
 lista2 = ['G', 'e', 'e', 'k', ' ', 'U', 'n', 'i', 'v', 'e', 'r', 's', 'i', 't', 'y']
@@ -110,7 +110,17 @@ lista3 = list('Geek University')
 lista4 = list(range(1, 11))
 lista5 = list('Geek University')
 
-# Ultilizando variaveis em listas
+"""
+
+# Fazendo acesso a elementos de forma indexada
+cores = ['verde', 'amarelo', 'azul', 'branco']
+
+print(cores[0])
+print(cores[1])
+print(cores[2])
+print(cores[3])
+
+
 
 
 
