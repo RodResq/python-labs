@@ -115,10 +115,16 @@ lista5 = list('Geek University')
 # Fazendo acesso a elementos de forma indexada
 cores = ['verde', 'amarelo', 'azul', 'branco']
 
-print(cores[0])
-print(cores[1])
-print(cores[2])
-print(cores[3])
+# print(cores[0])
+# print(cores[1])
+# print(cores[2])
+# print(cores[3])
+
+# Fazendo acesso aos elementos de forma indexida reversa
+print(cores[-1])
+print(cores[-2])
+print(cores[-3])
+print(cores[-4])
 
 
 
