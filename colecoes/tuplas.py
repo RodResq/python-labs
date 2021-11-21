@@ -57,4 +57,7 @@ tupla = ('a', 'b', 'c', 'd', 'e', 'a', 'b')
 
 print(tupla.count('c'))
 
+escola = tuple('Geek University')
+print(escola)
 
+print(escola.count('e'))
