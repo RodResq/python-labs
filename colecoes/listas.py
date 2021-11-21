@@ -110,8 +110,6 @@ lista3 = list('Geek University')
 lista4 = list(range(1, 11))
 lista5 = list('Geek University')
 
-"""
-
 # Fazendo acesso a elementos de forma indexada
 cores = ['verde', 'amarelo', 'azul', 'branco']
 
@@ -127,13 +125,20 @@ cores = ['verde', 'amarelo', 'azul', 'branco']
 # print(cores[-4])
 # print(cores[-5])
 
-# for cor in cores:
-#     print(cor)
+for cor in cores:
+    print(cor)
 
 indice = 0
 while indice < len(cores):
     print(cores[indice])
     indice = indice + 1
+"""
+
+cores = ['verde', 'amarelo', 'azul', 'branco']
+
+for indice, cor in enumerate(cores):
+    print(indice, cor)
+
 
 
 
