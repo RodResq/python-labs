@@ -60,13 +60,6 @@ print(escola)
 
 print(escola.count('e'))
 
-
-"""
-
-# Dicas de ultilizacoa de tupla, ultilizamas tupllas sempre que nao precizarmos alterar seus valores (constante)
-
-meses = ('Janeiro', 'Fevereiro', 'Marco', 'Abril', 'Maio', 'Junho', 'Julho')
-
 print(meses)
 
 # acesso de elementos
@@ -79,3 +72,17 @@ while i < len(meses):
     print(meses[i])
     i = i + 1
 
+print(meses.index('Junho'))
+
+
+"""
+
+# Dicas de ultilizacoa de tupla, ultilizamas tupllas sempre que nao precizarmos alterar seus valores (constante)
+
+meses = ('Janeiro', 'Fevereiro', 'Marco', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro'
+         , 'Dezembro')
+
+
+print(meses[5:])
+print(meses.index('junho'.lower().capitalize()))
+print(meses[meses.index('junho'.lower().capitalize()):])
