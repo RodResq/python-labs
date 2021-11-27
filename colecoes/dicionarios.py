@@ -12,7 +12,6 @@ print(type({}))
     - Chave e valor soa separados dois pontos: {'chave': 'valor'}
     - podem ser de qualquer tipo
     - podemos misturar tipos
-"""
 
 # forma 1 (mais comun)
 paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
@@ -24,3 +23,19 @@ print(type(paises))
 paises = dict(br='Braisl', eua='Estados Unidos', py='Paraguai')
 print(paises)
 print(type(paises))
+
+"""
+
+paises = {'br': 'Brasil', 'eua': 'Estados Unidos', 'py': 'Paraguai'}
+
+# Acessando Valores
+# Forma 1
+print(paises['br'])
+# print(paises['ru'])
+
+# keyError -> quando chave nao existe
+
+# FOrma 2 - Acessenado via get
+# Acessando via get
+print(paises.get('br'))
+print(paises.get('ru'))
