@@ -98,8 +98,16 @@ print(receita)
 
 # Remover dados de um dicionario
 
+# Foma 1
 receita = {'jan': 100, 'fev': 120, 'mar': 300}
+print(receita)
+ret = receita.pop('mar') # remove e retorna o valor
+print(ret)
+# informar a chave, se nao encontre -> keyError
 
-receita.pop('mar')
+print(receita)
 
+# Forma 2
 
+del receita['fev']
+print(receita)
