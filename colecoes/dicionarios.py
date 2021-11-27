@@ -93,12 +93,9 @@ print(receita)
 receita.update({'mai': 600})
 print(receita)
 
-"""
-
-
 # Remover dados de um dicionario
 
-# Foma 1
+# Foma 1 - mais comun
 receita = {'jan': 100, 'fev': 120, 'mar': 300}
 print(receita)
 ret = receita.pop('mar') # remove e retorna o valor
@@ -111,3 +108,19 @@ print(receita)
 
 del receita['fev']
 print(receita)
+
+"""
+
+# Ulizando Lista
+carrinho = []
+
+carrinho1 = ['Playstation', 1, 2300.00]
+carrinho2 = ['God of War 4', 1, 150.00]
+
+carrinho.append(carrinho1)
+carrinho.append(carrinho2)
+
+print(carrinho)
+
+# Ultilizando Tuplas
+
