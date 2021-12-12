@@ -57,7 +57,6 @@ s.add(4)
 s.add(4)
 print(s)
 
-"""
 
 # removendo elemento
 
@@ -67,10 +66,19 @@ s = {1, 2, 3}
 
 s.remove(3)
 
+# keyError
+# s.remove(33)
+
 print(s)
 
 # forma 2
 
-s.remove(33)
+s = {1, 2, 3}
+# Se o valor nao for enconrado nenhum error e gerado
+s.discard(22)
 
 print(s)
+
+
+"""
+
