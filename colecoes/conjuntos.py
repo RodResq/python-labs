@@ -101,6 +101,9 @@ print(novo)
 print(s)
 
 
+estudantes_python = {'Marcos', 'Patricia', 'Ellen', 'Pedro', 'Julia', 'Guilherme'}
+estudantes_java = {'Fernando', 'Gustavo', 'Julia', 'Ana', 'Patricia'}
+
 # uniao entre conjuntos - union()
 uniao = estudantes_python.union(estudantes_java)
 print(uniao)
@@ -110,11 +113,6 @@ uniao2 = estudantes_python | estudantes_java
 print(uniao2)
 print(type(uniao2))
 
-"""
-
-# Metodo de conjunto em python
-estudantes_python = {'Marcos', 'Patricia', 'Ellen', 'Pedro', 'Julia', 'Guilherme'}
-estudantes_java = {'Fernando', 'Gustavo', 'Julia', 'Ana', 'Patricia'}
 
 # forma 1 - Ultilizando o intersection9intersecao)
 ambos1 = estudantes_python.intersection(estudantes_java)
@@ -123,4 +121,13 @@ print(ambos1)
 # forma 2 - ultilizando o & comercial
 ambos2 = estudantes_python & estudantes_java
 print(ambos2)
+
+so_python = estudantes_python.difference(estudantes_java)
+print(so_python)
+
+so_java = estudantes_java.difference(estudantes_python)
+print(so_java)
+"""
+
+# Metodo de conjunto em python
 
