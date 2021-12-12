@@ -50,7 +50,27 @@ print(type(s))
 for valor in s:
     print(valor)
 
+# Usos interessantes com sets
+s = {1, 2, 3}
+
+s.add(4)
+s.add(4)
+print(s)
+
 """
 
+# removendo elemento
 
+s = {1, 2, 3}
 
+# Forma 1
+
+s.remove(3)
+
+print(s)
+
+# forma 2
+
+s.remove(33)
+
+print(s)
