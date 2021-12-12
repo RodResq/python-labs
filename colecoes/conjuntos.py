@@ -25,19 +25,31 @@ if 3 in s:
 else:
     print('Nao tem o 3')
 
-"""
-
 # Nos Set nao existe ordem
 
 lista = [99, 2, 34, 23, 2, 12, 1, 44, 34, 5]
-print(f'Lista: {lista}')
+print(f'Lista: {lista} com {len(lista)} tamanho')
 
 tupla = (99, 2, 34, 23, 2, 12, 1, 44, 34, 5)
-print(f'Tuplas: {tupla}')
+print(f'Tuplas: {tupla} com {len(tupla)} tamanho')
 
+# Dicionarios nao eaceiram chaves duplicadas
 dicionario = {}.fromkeys([99, 2, 34, 23, 2, 12, 1, 44, 34, 5], 'dict')
-print(f'Dicionario: {dicionario}')
+print(f'Dicionario: {dicionario} com {len(dicionario)} tamanho')
 
+# Conjuntos noao aceitam valores duplicados
 conjunto = {99, 2, 34, 23, 2, 12, 1, 44, 34, 5}
-print(f'conjunto: {conjunto}')
+print(f'conjunto: {conjunto} com {len(conjunto)} tamanho')
+
+
+"""
+
+# POdemo colocar dados de tipos misturados nos sets
+s = {1, 'b', True, 35.22, 44}
+print(s)
+print(type(s))
+
+# Podemos iterar nos set normalmente
+for valor in s:
+    print(valor)
 
