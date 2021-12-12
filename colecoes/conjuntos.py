@@ -41,9 +41,6 @@ print(f'Dicionario: {dicionario} com {len(dicionario)} tamanho')
 conjunto = {99, 2, 34, 23, 2, 12, 1, 44, 34, 5}
 print(f'conjunto: {conjunto} com {len(conjunto)} tamanho')
 
-
-"""
-
 # POdemo colocar dados de tipos misturados nos sets
 s = {1, 'b', True, 35.22, 44}
 print(s)
@@ -52,4 +49,8 @@ print(type(s))
 # Podemos iterar nos set normalmente
 for valor in s:
     print(valor)
+
+"""
+
+
 
