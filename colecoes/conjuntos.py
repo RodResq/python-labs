@@ -79,6 +79,40 @@ s.discard(22)
 
 print(s)
 
+print(s)
+# forma 1 - deep copy
+novo = s.copy()
+novo.add(4)
+
+print(novo)
+print(s)
+
+# Copiando um conjunto para o outro
+
+s = {1, 2, 3}
+
+# forma 2 - shallow copy
+
+novo = s
+
+novo.add(4)
+
+print(novo)
+print(s)
+
+
+# uniao entre conjuntos - union()
+uniao = estudantes_python.union(estudantes_java)
+print(uniao)
+
+# Forma 2 - Utilizando o caractere pipe |
+uniao2 = estudantes_python | estudantes_java
+print(uniao2)
+print(type(uniao2))
 
 """
+
+# Metodo de conjunto em python
+estudantes_python = {'Marcos', 'Patricia', 'Ellen', 'Pedro', 'Julia', 'Guilherme'}
+estudantes_java = {'Fernando', 'Gustavo', 'Julia', 'Ana', 'Patricia'}
 
