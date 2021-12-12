@@ -131,3 +131,9 @@ print(so_java)
 
 # Metodo de conjunto em python
 
+s = {1, 2, 3, 4, 5, 6}
+
+print(sum(s))
+print(max(s))
+print(min(s))
+print(len(s))
