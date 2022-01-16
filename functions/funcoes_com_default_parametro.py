@@ -141,12 +141,9 @@ print(diz_oi())
 
 #  Atencao com variaveis gloabais, se possivel evitar
 
-
-"""
-
 # Ultilizando a variavel global em um escopo local
 
-total = 1 # variavel global
+total = 0 # variavel global
 
 
 def incrementa():
@@ -156,6 +153,30 @@ def incrementa():
 
 
 print(incrementa())
+print(incrementa())
+print(incrementa())
+
+"""
+
+# Podemos ultilizar funcoes alinhadas no python
+
+
+def fora():
+    contador = 0
+
+    def dentro():
+        nonlocal contador # palavra chave para dizer q a variavel pertence a uma funcao anterior
+
+        contador = contador + 1
+        return contador
+    return dentro()
+
+
+print(fora())
+print(fora())
+print(fora())
+
+
 
 
 
