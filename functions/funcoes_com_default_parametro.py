@@ -99,6 +99,67 @@ print(fora())
 print(fora())
 print(fora())
 
+
+# Quais tipos de dados podemos ultilaicar como valores default de aramenttros
+    - Number, strings , floats , booleanos, listas, tuplasm dicionarios, funcoes e etc
+
+
+# Passando funcoes como paramentro
+
+
+def soma(num1, num2):
+    return num1 + num2
+
+
+def subtracao(num1, num2):
+    return num1 - num2
+
+
+def mat(num1, num2, fun=soma):
+    return fun(num1, num2)
+
+
+print(mat(2, 3))
+print(mat(2, 2, subtracao))
+
+
+# Escopo - Evitar problemas e confusoes
+
+# Variaveis Globais
+
+instrutor = 'Geek'
+
+
+def diz_oi():
+    instrutor = 'Python' # variavel Local
+    return f'oi {instrutor}'
+
+
+print(diz_oi())
+
+# OBS: A variavel local tem preferencia da variavel global, na hipotese de ultilizarem o mesmo nome
+
+#  Atencao com variaveis gloabais, se possivel evitar
+
+
 """
+
+# Ultilizando a variavel global em um escopo local
+
+total = 1 # variavel global
+
+
+def incrementa():
+    global total # Usar a palavra chave 'global'
+    total = total + 1
+    return total
+
+
+print(incrementa())
+
+
+
+
+
 
 
