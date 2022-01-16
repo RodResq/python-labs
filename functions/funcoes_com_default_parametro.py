@@ -7,6 +7,10 @@ def exponencial(numero, potencia=2):
     return numero ** potencia
 
 
+#  Em funcoes Python, os paramentros com valores default (padrao) DEVEM sempre estar ao final da declaracao
+def teste(potencia, num=2):
+    return num ** potencia
+
 print(exponencial(2, 3))
 
 print(exponencial(3, 2))
@@ -31,7 +35,7 @@ def mostrar_informacoes(nome='Geek', instrutor=False):
 
 print(mostrar_informacoes())
 print(mostrar_informacoes(instrutor=True))
-print(mostrar_informacoes(True)) #error
+print(mostrar_informacoes(True)) #Atribuiu ao primeiro paramentro
 print(mostrar_informacoes(nome='Stephany'))
 
 
