@@ -59,26 +59,32 @@ print('*************************')
 minha_funcao(34, 'Felipe', eu='Nao', voce='vai')
 print('*************************')
 minha_funcao(19, 'Carla', 9, 4, 3, java=False, python=True)
+
+
+# DESEMPACOTANDO DICIONARIO COM **
+def mostrar_nome(**kwargs):
+    return f"{kwargs['nome']} {kwargs['sobrenome']}"
+
+nomes = {'nome': 'Felicity', 'sobrenome': 'Jones'}
+print(mostrar_nome(**nomes))
+
+
+
 """
 
 from numpy import kaiser
 
+def soma_multiplos(a, b, c):
+    print(a + b + c)
 
-def minha_funcao(idade, nome, *args, solteiro=True, **kwargs):
-    print(f'{nome} tem {idade} anos')
-    print(args)
-    if solteiro:
-        print('Solteiro')
-    else:
-        print('Casado')
-    print(kwargs)
+lista = [1, 2, 3]
+tupla = (1, 2, 3)
+conjunto = {1, 2, 3}
 
 
-minha_funcao(8, 'Julia')
-print('*************************')
-minha_funcao(18, 'Felicity', 4, 5, 3, solteiro=False)
-print('*************************')
-minha_funcao(34, 'Felipe', eu='Nao', voce='vai')
-print('*************************')
-minha_funcao(19, 'Carla', 9, 4, 3, java=False, python=True)
+soma_multiplos(*lista)
+soma_multiplos(*tupla)
+soma_multiplos(*conjunto)
 
+dicionario = dict(a=1, b=2, c=3)
+soma_multiplos(**dicionario)
