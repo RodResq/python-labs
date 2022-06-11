@@ -6,6 +6,7 @@
     3 - Ultilizado em funcao
     4 - Coloca os valores extras em uma tupla
     5 - Sao imutaveis
+    6 - Paramentro nao e obrigatorio
 
     def soma_numeros(*args):
         total = 0
