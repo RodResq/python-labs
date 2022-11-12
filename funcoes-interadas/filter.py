@@ -1,6 +1,5 @@
 """
 Filter -> serve para filtrar dados de um determinada colecao
-"""  
 # Bibliotesa
 import statistics
 # dados coletados de algum sensor
@@ -11,8 +10,22 @@ media = statistics.mean(dados)
 
 # Obs: Assim como a funcao map(), a filter recebe dois parametros, sendo uma funcao e um interavel
 res = filter(lambda valor: valor > media, dados)
+print(type(res))
 print(list(res))
+# obs: assim como na funcao map apos serem ultilizados os dados de filter, eles sao excluidos da memoria 
+print(f'Novamente: {list(res)}')
+
+paises = ['', 'Argentina', '', 'Brasil', 'Chile', '', 'Colombia', '', 'Equador', '', '', 'Venezuela']
     
-    
-    
+print(paises)
+
+print(list(res))
+"""  
+
+paises = ['', 'Argentina', '', 'Brasil', 'Chile', '', 'Colombia', '', 'Equador', '', '', 'Venezuela']
+
+# res = filter(lambda pais: len(pais) > 0, paises)
+# res = filter(None, paises)
+res = filter(lambda pais: pais != '', paises)
+print(list(res))    
     
