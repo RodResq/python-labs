@@ -20,7 +20,6 @@ paises = ['', 'Argentina', '', 'Brasil', 'Chile', '', 'Colombia', '', 'Equador',
 print(paises)
 
 print(list(res))
-"""  
 
 paises = ['', 'Argentina', '', 'Brasil', 'Chile', '', 'Colombia', '', 'Equador', '', '', 'Venezuela']
 
@@ -28,4 +27,21 @@ paises = ['', 'Argentina', '', 'Brasil', 'Chile', '', 'Colombia', '', 'Equador',
 # res = filter(None, paises)
 res = filter(lambda pais: pais != '', paises)
 print(list(res))    
-    
+
+
+usuarios = [
+    {"username": "samuel", "tweets": ["Eu adoro bolos", "Eu adoro pizzas"]},
+    {"username": "carla", "tweets": ["Eu amo meu gato"]},
+    {"username": "jeff", "tweets": []},
+    {"username": "bob123", "tweets": []},
+    {"username": "doggo", "tweets": ["Eu gosto de cachorros", "Vou sair hoje"]},
+    {"username": "gal", "tweets": []},
+]    
+# print(usuarios)
+# inativos = list(filter(lambda usuario: len(usuario['tweets']) == 0, usuarios))
+inativos = list(filter(lambda usuario: not usuario['tweets'], usuarios))
+print(list(inativos))
+"""  
+nomes = ['Vanessa', 'Ana', 'Maria']
+lista = list(map(lambda nome: f'Sua instrutora e {nome}', filter(lambda nome: len(nome) > 3, nomes)))
+print(lista)
