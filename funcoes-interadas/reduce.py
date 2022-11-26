@@ -12,3 +12,10 @@ mult = lambda x, y: x * y
 
 res = reduce(mult, dados)
 print(res)
+
+#Ultilizando um for normal
+res = 1
+for n in dados:
+    res = res * n;
+    
+print(res);
