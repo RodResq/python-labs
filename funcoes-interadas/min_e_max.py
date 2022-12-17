@@ -62,10 +62,6 @@ print(min(3.45345, 5.65776))
 
 print(min('Geek University'))
 
-"""
-
-
-# Outros Exemplos
 
 nomes = ['Arya', 'Samson', 'Dora', 'Tim', 'Olivander']
 print(max(nomes))   # Tim
@@ -74,7 +70,48 @@ print(min(nomes))   # Arya
 print(max(nomes, key=lambda nome: len(nome)))  # Olivander
 print(min(nomes, key=lambda nome: len(nome)))  # Tim
 
+# Verificando min im max de uma lista de dictionary
+musicas = [
+    {'titulo': 'a', 'tocou': 7},
+    {'titulo': 'b', 'tocou': 4},
+    {'titulo': 'c', 'tocou': 3},
+    {'titulo': 'd', 'tocou': 32}
+]
+
+print(max(musicas, key=lambda musica: musica['tocou']))
+print(min(musicas, key=lambda musica: musica['tocou']))
+"""
+# Outros Exemplos
+
+musicas = [
+    {'titulo': 'a', 'tocou': 7},
+    {'titulo': 'b', 'tocou': 4},
+    {'titulo': 'c', 'tocou': 3},
+    {'titulo': 'd', 'tocou': 32}
+]
+
+print(dict(max(musicas, key=lambda musica: musica['tocou'])).get('titulo'))
+print(dict(min(musicas, key=lambda musica: musica['tocou'])).get('titulo'))
+
+# DESAFIO! Como criar a musica mais tocada e menos tocada sem usar max(), min() e lambda?
+
+mais_tocada = 0
+for musica in musicas:
+    if musica['tocou'] > mais_tocada:
+        mais_tocada = musica['tocou']
+
+for musica in musicas:
+    if musica['tocou'] == mais_tocada:
+        print(musica['tocou'])
 
 
+menos_tocada = 9999
+for musica in musicas:
+    if musica['tocou'] < menos_tocada:
+        menos_tocada = musica['tocou']
+
+for musica in musicas:
+    if musica['tocou'] == menos_tocada:
+        print(musica['tocou'])
 
 
