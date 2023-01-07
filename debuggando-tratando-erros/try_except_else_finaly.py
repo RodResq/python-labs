@@ -17,10 +17,7 @@ else:
 finally:
     print('Excutando o finally')
     
-
-"""
-
-
+# Generico
 def dividir(a, b):
     try:
         ret = int(a) / int(b)
@@ -31,6 +28,20 @@ def dividir(a, b):
     else:
         return ret
     
+a = input('Entre com o primeiro numero: ')
+b = input('Entre com o segundo numero: ')
+
+print(dividir(a, b))
+
+"""
+
+# Semi-Generico
+def dividir(a, b):
+    try:
+        return int(a) / int(b)
+    except (ValueError, ZeroDivisionError) as err:
+        return f'Ocorreu um error: {err}! '
+
 a = input('Entre com o primeiro numero: ')
 b = input('Entre com o segundo numero: ')
 
