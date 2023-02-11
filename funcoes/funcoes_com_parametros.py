@@ -48,12 +48,12 @@ def soma_impares(numeros):
             total = total + num
     return total
 
+if __name__ == '__main__':
+    lista = [1, 2, 3, 4, 5, 6, 7]
+    print(soma_impares(lista))
 
-lista = [1, 2, 3, 4, 5, 6, 7]
-print(soma_impares(lista))
-
-tupla = (1, 2, 3, 4, 5, 6, 7)
-print(soma_impares(tupla))
+    tupla = (1, 2, 3, 4, 5, 6, 7)
+    print(soma_impares(tupla))
 
 
 
