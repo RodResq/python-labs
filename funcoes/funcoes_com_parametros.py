@@ -54,6 +54,8 @@ if __name__ == '__main__':
 
     tupla = (1, 2, 3, 4, 5, 6, 7)
     print(soma_impares(tupla))
+else:
+    print(f'O mudulo funcoes com paramentrs foi importado {__name__}')
 
 
 

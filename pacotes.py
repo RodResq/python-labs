@@ -17,6 +17,11 @@ print(geek4.funcao4())
 
 from geek.geek1 import funcao1
 from geek.university.geek4 import funcao4
+from funcoes import funcoes_com_parametros
+
 
 print(funcao1(4, 2))
 print(funcao4())
+print(funcoes_com_parametros.soma_impares([1, 2, 3]))
+
+

@@ -26,10 +26,9 @@ public static void main(String[] args) {
 # python atribuirá a varivel dunder __name__ o valor __main__ indicano que este modulo de execucao é o principal
 
 """
-
 from funcoes import funcoes_com_parametros
 
-print(funcoes_com_parametros([1, 2, 3, 4, 5]))
+# print(funcoes_com_parametros([1, 2, 3, 4, 5]))
 
 
 
